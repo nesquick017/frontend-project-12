@@ -6,8 +6,7 @@ install:
 	npm --prefix ./frontend install
 
 start-frontend:
-npm --prefix ./frontend run build
-
+	npm --prefix ./frontend run build
 	make -C frontend start
 
 start-backend:

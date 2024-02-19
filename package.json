@@ -4,7 +4,10 @@
   "description": "[![Actions Status](https://github.com/nesquick017/frontend-project-12/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/nesquick017/frontend-project-12/actions)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run build --prefix hexlet-chat",
+    "start": "start-server -s ./hexlet-chat/build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "cd hexlet-chat && npm ci"
   },
   "author": "",
   "license": "ISC",

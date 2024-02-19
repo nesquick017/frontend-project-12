@@ -4,7 +4,7 @@
   "description": "[![Actions Status](https://github.com/nesquick017/frontend-project-12/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/nesquick017/frontend-project-12/actions)",
   "main": "index.js",
   "scripts": {
-    "build": "run build --prefix frontend",
+    "build": "npm install --ignore-scripts && npm --prefix ./frontend install && npm run build --prefix frontend",
     "start": "npx start-server -s ./frontend/build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "cd frontend && npm ci"
